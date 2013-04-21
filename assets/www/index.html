@@ -17,35 +17,92 @@
     specific language governing permissions and limitations
     under the License.
 -->
+<!doctype html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Office Workout</title>
-    </head>
-    <body>
-        <div class="app">
-       		<h1><center>My Streching Coach</center></h1>
-            <div id="content">
-              <div class="titleBox">
-                HOME
-              </div>
-              <div class="row-fluid">
-                <div class="span2">item 1</div>
-                <div class="span2">item 2</div>
-              </div>
-              <div class="row-fluid">
-                <div class="span2">item 3</div>
-                <div class="span2">item 4</div>
-              </div>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova-2.5.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/iscroll-lite.js"></script>
+		<script src="js/app.js"></script>
+		
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<title>Office Workout</title>
+	</head>
+
+	<body>
+		<header>
+		    <h1>My Stretching Coach</h1>
+		</header>
+		
+		<div id="wrapper">
+		    <div id="main-content">
+		    
+		    	<div id="pages">
+				    <div id="home" class="current">
+				    	<div class="center-block">
+					   		<div class="row-fluid">
+					        	<div class="span3">
+					        		<div id="homeBtnFunFacts">
+					        			<img src="./img/note.png"/>Fun Facts
+					        		</div>
+					        	</div>
+					            <div class="span3">
+					            	<div id="homeBtnStartWorkout">
+					            		<img src="./img/running24.png"/>Start Workout
+					            	</div>
+					            </div>
+							</div>
+					        <div class="row-fluid">
+					        	<div class="span3">
+					        		<div id="homeBtnEditSettings">
+					        			<img src="./img/process.png"/>Edit Settings
+					        		</div>
+					        	</div>
+					            <div class="span3">
+					           		<div id="homeBtnViewStats">
+					           			<img src="./img/calculator.png"/>View stats
+					           		</div>
+					           	</div>
+							</div>
+						</div>
+				    </div>
+				    <div id="workout">
+				    	this will be the workout page.
+				    </div>
+				    <div id="stats">
+				    	this will be the stats page.
+				    </div>
+				    <div id="facts">
+						these are the facts!
+					</div>
+					<div id="settings">
+						Edit your settings!
+					</div>
+				</div>
+		    
+		    </div>
+		</div>
+		
+		<footer>
+			<ul id="tab-bar">
+				<li>
+				    <a href="#home">Home</a>
+				</li>
+				<li>
+				    <a href="#workout">Workout</a>
+				</li>
+				<li>
+					<a href="#stats">Stats</a>
+				</li>
+			</ul>
+		</footer>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/iscroll-lite.js"></script>
+		<script src="js/app.js"></script>
+	</body>
 </html>
