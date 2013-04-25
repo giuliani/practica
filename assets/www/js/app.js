@@ -6,6 +6,18 @@ function scroll(){
 }
 document.addEventListener('DOMContentLoaded', scroll, false);
 
+var now = new Date();
+var notificationTime = new Date();
+notificationTime.setHours(14);
+notificationTime.setMinutes(0);
+notificationTime.setSeconds(0);
+var deltaT = now.getTime() - notificationTime.getTime();
+deltaT = 10000;
+/*if(deltaT >=0)
+	var notify = setTimeout(function(){showAlert();}, deltaT);*/
+	
+/*window.plugins.statusBarNotification.notify("Put your title here", "Put your sticky message here");*/
+
 $('#homeBtnStartWorkout').on('click', function(e){
 	e.preventDefault();
 	var nextPage = $('#workout');
@@ -58,3 +70,17 @@ function page(toPage) {
     });
     fromPage.addClass("fade out");
 }
+/*
+function showAlert() {
+    navigator.notification.alert(
+        'Time for your workout!',// message
+        alertDismissed,         // callback
+        'My Stretching Coach', // title
+        'Ok'                  // buttonName
+    );
+}
+
+function alertDismissed() {
+    // do something
+}
+*/
